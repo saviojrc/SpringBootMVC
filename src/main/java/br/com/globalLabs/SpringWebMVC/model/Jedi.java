@@ -4,9 +4,9 @@ import javax.validation.constraints.NotBlank;
 
 public class Jedi {
 
-	@NotBlank
+	@NotBlank(message = "Required field!")
 	private String name;
-	@NotBlank
+	@NotBlank(message = "Required field!")
 	private String lastName;
 
 	public Jedi(final String name, final String lastName) {
